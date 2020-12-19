@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1406823D-4F07-42DB-9067-584A5E13DFAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PIT_STOP.My.MyApplication</StartupObject>
+    <RootNamespace>PIT_STOP</RootNamespace>
+    <AssemblyName>PIT STOP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PIT STOP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PIT STOP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="akrapovic.Designer.vb">
+      <DependentUpon>akrapovic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="akrapovic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="akrapovic1.4.Designer.vb">
+      <DependentUpon>akrapovic1.4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="akrapovic1.4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="akrapovic1_8.Designer.vb">
+      <DependentUpon>akrapovic1_8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="akrapovic1_8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="akrapovic2.0.Designer.vb">
+      <DependentUpon>akrapovic2.0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="akrapovic2.0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aprexhaust.Designer.vb">
+      <DependentUpon>aprexhaust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aprexhaust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aprexhaust18.Designer.vb">
+      <DependentUpon>aprexhaust18.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aprexhaust18.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aprexhaust20.Designer.vb">
+      <DependentUpon>aprexhaust20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aprexhaust20.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkout.Designer.vb">
+      <DependentUpon>checkout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choosedsg.Designer.vb">
+      <DependentUpon>choosedsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="choosedsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseengine.Designer.vb">
+      <DependentUpon>chooseengine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chooseengine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseenginestage.Designer.vb">
+      <DependentUpon>chooseenginestage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chooseenginestage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coleerchostage.Designer.vb">
+      <DependentUpon>coleerchostage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coleerchostage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coolerst1.Designer.vb">
+      <DependentUpon>coolerst1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coolerst1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coolerstg2.Designer.vb">
+      <DependentUpon>coolerstg2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coolerstg2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coolerstg3.Designer.vb">
+      <DependentUpon>coolerstg3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coolerstg3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dsg7.Designer.vb">
+      <DependentUpon>dsg7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dsg7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intakeapr.Designer.vb">
+      <DependentUpon>intakeapr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="intakeapr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intakechoose.Designer.vb">
+      <DependentUpon>intakechoose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="intakechoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exhausteng.Designer.vb">
+      <DependentUpon>exhausteng.vb</DependentUpon>
+    </Compile>
+    <Compile Include="exhausteng.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intakepitstop.Designer.vb">
+      <DependentUpon>intakepitstop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="intakepitstop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intaketmg.Designer.vb">
+      <DependentUpon>intaketmg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="intaketmg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="remus.Designer.vb">
+      <DependentUpon>remus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="remus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remus1.4.Designer.vb">
+      <DependentUpon>remus1.4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="remus1.4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remus1_8.Designer.vb">
+      <DependentUpon>remus1_8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="remus1_8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remus2.0.Designer.vb">
+      <DependentUpon>remus2.0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="remus2.0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stage14.Designer.vb">
+      <DependentUpon>stage14.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stage14.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stage18.Designer.vb">
+      <DependentUpon>stage18.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stage18.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stage20.Designer.vb">
+      <DependentUpon>stage20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stage20.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t1.8.Designer.vb">
+      <DependentUpon>t1.8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="t1.8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t2.Designer.vb">
+      <DependentUpon>t2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="t2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tonefour.Designer.vb">
+      <DependentUpon>tonefour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tonefour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choosecar.Designer.vb">
+      <DependentUpon>choosecar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="choosecar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="akrapovic.resx">
+      <DependentUpon>akrapovic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="akrapovic1.4.resx">
+      <DependentUpon>akrapovic1.4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="akrapovic1_8.resx">
+      <DependentUpon>akrapovic1_8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="akrapovic2.0.resx">
+      <DependentUpon>akrapovic2.0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aprexhaust.resx">
+      <DependentUpon>aprexhaust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aprexhaust18.resx">
+      <DependentUpon>aprexhaust18.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aprexhaust20.resx">
+      <DependentUpon>aprexhaust20.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choosedsg.resx">
+      <DependentUpon>choosedsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chooseengine.resx">
+      <DependentUpon>chooseengine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chooseenginestage.resx">
+      <DependentUpon>chooseenginestage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coleerchostage.resx">
+      <DependentUpon>coleerchostage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coolerst1.resx">
+      <DependentUpon>coolerst1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coolerstg2.resx">
+      <DependentUpon>coolerstg2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coolerstg3.resx">
+      <DependentUpon>coolerstg3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dsg7.resx">
+      <DependentUpon>dsg7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intakeapr.resx">
+      <DependentUpon>intakeapr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intakechoose.resx">
+      <DependentUpon>intakechoose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exhausteng.resx">
+      <DependentUpon>exhausteng.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intakepitstop.resx">
+      <DependentUpon>intakepitstop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intaketmg.resx">
+      <DependentUpon>intaketmg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remus.resx">
+      <DependentUpon>remus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remus1.4.resx">
+      <DependentUpon>remus1.4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remus1_8.resx">
+      <DependentUpon>remus1_8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="remus2.0.resx">
+      <DependentUpon>remus2.0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stage14.resx">
+      <DependentUpon>stage14.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stage18.resx">
+      <DependentUpon>stage18.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stage20.resx">
+      <DependentUpon>stage20.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t1.8.resx">
+      <DependentUpon>t1.8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t2.resx">
+      <DependentUpon>t2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tonefour.resx">
+      <DependentUpon>tonefour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choosecar.resx">
+      <DependentUpon>choosecar.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="123ק.png" />
+    <Content Include="audi.png" />
+    <Content Include="grgrgr.png" />
+    <Content Include="seat.png" />
+    <Content Include="Untitled.png" />
+    <Content Include="Untitled678.png" />
+    <Content Include="volkswagen.png" />
+    <Content Include="לםלם.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
